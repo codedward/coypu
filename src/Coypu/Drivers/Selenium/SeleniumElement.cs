@@ -32,6 +32,8 @@ namespace Coypu.Drivers.Selenium
 
         public bool Disabled => !_native.Enabled;
 
+        public bool Displayed => _native.Displayed;
+
         public string SelectedOption
         {
             get

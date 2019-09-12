@@ -30,6 +30,8 @@ namespace Coypu.Drivers.Selenium
 
         public bool Disabled => throw new NotSupportedException();
 
+        public bool Displayed => throw new NotSupportedException();
+
         public string OuterHTML => ((ISearchContext) Native).FindElement(By.XPath("./*"))
                                                             .GetAttribute("outerHTML");
 

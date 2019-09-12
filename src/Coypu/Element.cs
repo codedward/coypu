@@ -59,5 +59,10 @@ namespace Coypu
         /// Whether the element is disabled
         /// </summary>
         bool Disabled { get; }
+
+        /// <summary>
+        /// Whether the element is currently displayed
+        /// </summary>
+        bool Displayed { get; }
     }
 }

@@ -111,6 +111,15 @@ namespace Coypu
             }
         }
 
+        public bool Displayed
+        {
+            get
+            {
+                return Try(() => Now()
+                    .Displayed);
+            }
+        }
+
         public string this[string attributeName]
         {
             get { return Try(() => Now()[attributeName]); }
